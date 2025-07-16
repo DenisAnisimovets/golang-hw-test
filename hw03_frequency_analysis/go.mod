@@ -1,4 +1,4 @@
-module github.com/DenisAnisimovets/hw03_frequency_analysis
+module github.com/DenisAnisimovets/golang-hw-test/hw03_frequency_analysis
 
 go 1.23
 

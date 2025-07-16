@@ -48,6 +48,14 @@ func TestTop10(t *testing.T) {
 		require.Len(t, Top10(""), 0)
 	})
 
+	t.Run("one word without any spaces", func(t *testing.T) {
+		expected := []string{
+			"test",
+		}
+
+		require.Equal(t, expected, Top10("test"))
+	})
+
 	t.Run("positive test", func(t *testing.T) {
 		if taskWithAsteriskIsCompleted {
 			expected := []string{
